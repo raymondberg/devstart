@@ -16,7 +16,7 @@ while True:
     elif ops == '-':
         temp = number1 - number2
     elif ops == '/':
-        temp = number1 / number2
+        temp = float(number1) / float(number2)
     else:
         temp = number1 * number2
 
@@ -24,7 +24,7 @@ while True:
         print("Correct!")
         correct = correct + 1
     else:
-        print("Ooops! The correct answer was %d" % ( temp))
+        print("Ooops! The correct answer was " + str(temp))
 
     total = total + 1
 
