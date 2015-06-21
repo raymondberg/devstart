@@ -1,0 +1,183 @@
+<html>
+<head>
+	<title>DevStart</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body style="background-color:#113">
+<div class="center-block" style="padding:10px;width:800px;background-color:white">
+	<h1 style="text-align:center;">Devstart/Projects</h1>
+	<div class="page-header">
+        <h4>Tackle these problems in order for best results!</h4>
+	</div>
+
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Easy!</h4>
+    </div>
+    <div class="panel-body">
+            <h4>The first line of your code is this:</h4>
+                <p><pre>notes = ["do","re","mi","fa","so","la","ti","do"]</pre></p>
+            <h4>The way your program should work:</h4>
+            <ul>
+                <li>Say the notes of the scale up and down</li>
+                <li>You can do it once the manual way, but then do it with a loop or two :)</li>
+            </ul>
+            <h4>Example</h4>
+            <p> <pre>    do
+    re
+    me
+    fa
+    so
+    la
+    ti
+    do
+    do
+    ti
+    la
+    so
+    fa
+    me
+    re
+    do</pre>
+            </p>
+<p class="alert alert-info"><span style="font-weight:bold">Clue: </span> What happens when you type `len(notes)` in the Python Console? What about `range(1,10)`? What about `range(10,1)`? What about `range(10,1,-1)`? </p>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Medium!</h4>
+    </div>
+    <div class="panel-body">
+<h4>The first line of your code is this:</h4>
+    <p><pre>dinosaurs = ["T-Rex", "Pterodactyl", "Triceratops", "Barney"]</pre></p>
+<h4>The way your program should work:</h4>
+<ul>
+    <li>Ask the users in what year they think the dinosaurs lived (BCE)</li>
+    <li>Then say "If that's true then..." and list off when the dinosaurs lived</li>
+    <li>Each dinosaur should live one year after the previous, starting with the year +1 (or minus 1 because it's BCE!)</li>
+</ul>
+<h4>Example</h4>
+<p> <pre>    In what year do you think the dinosaurs lived? (user enters 60000)
+    If that's true then...
+    T-Rex lived in the year 59999 BCE
+    Pterodactyl lived in the year 59998 BCE
+    Triceratops lived in the year 59997 BCE
+    Barney lived in the year 59996 BCE
+    </pre>
+</p>
+<p class="alert alert-info"><span style="font-weight:bold">Clue: </span> It's tricky to mix strings and numbers. What happens when you type `str(9)` in the Python Console? What about `"The number %d." % 9` ?</p>
+</div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Hard!</h4>
+    </div>
+    <div class="panel-body">
+<h4>The first line of your code is this: </h4>
+    <p><pre>things = ["Armadillos", "Muppets", "Spooky Houses", "Black Labs", "Bananas"] </pre></p>
+<h4>The way your program should work:</h4>
+<p> You are going to ask the user about their likes/dislikes</p>
+<ul>
+    <li>Tell the user you would like to ask them if they like a few things or not.</li>
+    <li>Tell the user to specify their answer between 1 and 5</li>
+    <ul>
+        <li>If the user types in 5, they REAAAAALLY love the thing</li>
+        <li>If the user types in 1, they REEEALLY don't like the thing</li>
+    </ul>
+    <li>For each item in the list of things, ask the user how they feel</li>
+    <li>After the user enters how they feel, say how they feel back to them. This should change based on what the user says.</li>
+    <li>When they are all done, thank them for answering their questions. Maybe come up with something funny to say. This doesn't have to change. Just put some plain old text in there. </li>
+</ul>
+</p>
+<h4>Example</h4>
+<p><pre>
+    I want to ask you how you feel  some things. Answer between 1 and 5.
+    How do you feel about Armadillos? (the user enters 1)
+    Oh, you REAAAAAALLY don't like Armadillos. Got it!
+    How do you feel about Muppets? (the user enters 4)
+    Oh, you really like Muppets. Got it!
+
+    ...
+    Hmm, from what you told me you seem to think Martians are going to take over the earth. Very interesting. Thanks for talking to me.
+</pre></p>
+</div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Super Hard!!</h4>
+    </div>
+    <div class="panel-body">
+<h4>The first line of your code is this:</h4>
+<p><pre> items = [] </pre></p>
+<h4>The way your program should work:</h4>
+<p> You are going to let the users create their own lists as they go, basically pretending to be python while a user types.
+<ul>
+ <li>Start by telling the users what their list looks like.</li>
+ <li>Then, ask what the user to enter a command.</li>
+ <li>After each command is complete you should print what the list looks like again</li>
+ <li>The user should be able to do 3 things: stack, unstack, quit</li>
+ <ul>
+    <li>When the user chooses list, they should also type in an item they want to list. This item will get added from the array. </li>
+    <li>When the user chooses unstack, the last item on the list should get removed </li>
+    <li>When the user chooses list, tell the user to "Have a nice day" and stop asking for more input</li>
+ </ul>
+</ul>
+<h4>Example</h4>
+<p><pre>    Greetings! I have made a list for you.
+    This is what your list looks like: []
+    What should I do? (user enters stack 3)
+    This is what your list looks like: ["3"]
+    What should I do? (user enters stack banana)
+    This is what your list looks like: ["3","banana"]
+    What should I do? (user enters stack lake)
+    This is what your list looks like: ["3","banana","lake"]
+    What should I do? (user enters unstack)
+    This is what your list looks like: ["3","banana"]
+    What should I do? (user enters quit)
+    Have a nice day!
+</pre></p>
+
+<p class="alert alert-info"><span style="font-weight:bold">Clue: </span>What happens when you type `"first second".split(" ")` in the Python Console?</p>
+</div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Crazy Hard</h4>
+    </div>
+    <div class="panel-body">
+<p>Build on the code you made in the last project
+<ul>
+    <li>Add a 4th command: laserblast</li>
+    <li>laserblast can remove a single item from anywhere in the list, regardless of its position</li>
+    <li>When a user specifies a laserblast they should also type in the item they want to remove</li>
+    <li>When a user enters another command tell them that you don't understand the command and ask again for command</li>
+</ul>
+<h4>Example</h4>
+<p><pre>    Greetings! I have made a list for you.
+    This is what your list looks like: []
+    What should I do? (user enters stack 3)
+    This is what your list looks like: ["3"]
+    What should I do? (user enters unstork)
+    ERROR: I don't know what `unstork` means
+    What should I do? (user enters stack banana)
+    This is what your list looks like: ["3","banana"]
+    What should I do? (user enters stack lake)
+    This is what your list looks like: ["3","banana","lake"]
+    What should I do? (user enters laserblast banana)
+    This is what your list looks like: ["3","lake"]
+    What should I do? (user enters quit)
+    Have a nice day!
+</pre></p>
+<p class="alert alert-info"><span style="font-weight:bold">Clue: </span> Check out <a href="https://docs.python.org/2/tutorial/datastructures.html#more-on-lists" style="text-decoration:underline; font-weight:bold">the different ways you can use `[1,2,3,4].pop()`</a></p>
+</div>
+</div>
+<h3> GOOD LUCK! </h3>
+</body>
+</html>
