@@ -1,6 +1,6 @@
 # This script contains in it the instructions for a game and the game logic itself.
 # Try to figure out how it works, then see if you can improve it!
-chapters = [
+chapters = []
 chapters.append({
     0: {
         "text": "You wake up in a room, laying on a hard wooden floor.",
@@ -36,11 +36,11 @@ for chapter in chapters:
     step = chapter[0]
     while True:
         print(step["text"])
-        command = input(" > ");
+        user_command = input(" > ");
         picked_command = None
 
         for command in step["commands"]:
-            if command["command"] == command:
+            if command["command"] == user_command:
                 picked_command = command
                 break
 
