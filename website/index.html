@@ -2,14 +2,21 @@
 <head>
 	<title>DevStart</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color:#113">
 <div class="center-block" style="padding:10px;width:800px;background-color:white">
 	<h1 style="text-align:center;">DevStart</h1>
-	<div class="page-header">
-		<h3>About the Project</h3>
-	</div>
+    <div class="accordion" id="pageAccordion">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#pageAccordion" href="#collapseOne">
+              About the Project</a></h3>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse">
+            <div class="accordion-inner">
 	<ul>
 		<li><b>A custom experience</b> to move each participant("student") from their current state to the next level. (technophobe -> game player, dabbler -> beginning programmer, geek -> ubergeek). </li>
 		<li><b>Each session starts with 1 microtalk</b> - a 10-15 minute discussion to explain new fundamental concepts (basic commands, loops/blocks, object oriented design, language basics, technologies[web/scripts/apps])</li>
@@ -23,9 +30,16 @@
 		</ul>
 	</ul>
 	<p>*Note: Many public schools offer curriculum that is far more targeted and specialized for classrooms and age ranges. This is not intended as a substitute or replacement. Be sure to look for Computer Science, Math and Programming options in your local school system!!</p>
-	<div class="page-header">
-		<h3>How / Where / When </h3>
-	</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#pageAccordion" href="#collapseTwo">
+                How / Where / When? </a></h3>
+          </div>
+          <div id="collapseTwo" class="accordion-body collapse">
+            <div class="accordion-inner">
 	<ul>
 		<li>Buy-in cost: $32. Coach(es) are all-volunteer. Money will be used to buy classroom materials or donated to a STEM education-related non-profit.</a>
 		<li>Students must come to 4 of 6 sessions to remain in course.</li>
@@ -33,13 +47,62 @@
 	</ul>
 	<p>**Note: Reach out to coach if this is the only thing holding you back! The long term goal is to provide affordable laptops as part of charity-sponsored course offerings, but we can see what to try in the meantime.</p>
 
+	<p>6 Week Course Dates*:
+		<ul>
+			<li>Sun, Jun 7 : 12:30pm to 1:30pm </li>
+			<li>Sun, Jun 14 : 12:30pm to 1:30pm </li>
+			<li>Sun, Jun 21 : 12:30pm to 1:30pm </li>
+			<li>Sun, Jun 28 : 12:30pm to 1:30pm </li>
+			<li>Sun, Jul 12 : 12:30pm to 1:30pm </li>
+			<li>Sun, Jul 19 : 12:30pm to 1:30pm </li>
+		</ul>
+		Up to 1 hour extra time available each week for personal projects or more help.
+	</p>
 	<p> Initial offering is internal only, but <a href="https://twitter.com/raymondberg">grab me on Twitter (@raymondberg)</a> if you are interested! </p>
 	<p>*Note: Possible extension or second offering based on demand/interest. </p>
-	<div class="page-header">
-		<h3>About the Coach(es)</h3>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#pageAccordion" href="#collapseThree">
+                About the Coaches</a></h3>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+	<div class="section-header">
+		<h4>Ray Berg</h4>
 	</div>
+	<ul>
+		<li>BS/MS in Computer Science</li>
+		<li>Teaching/Mentoring experience - Graduate School Co-Teacher, Community Education, University Academic Advisor</li>
+		<li>History of software development, computer security and technical skills across IT </li>
+		<li>Connection to professional groups for software developers </li>
+		<li>Languages: Python, Javascript, PHP, Bash/KSH, HTML/CSS, Java, C/C++, XML/XSLT/JSON, SQL/RDBMS, ... </li>
+	</ul>
+            </div>
+          </div>
+        </div>
+  </div>
+  <hr />
 
+  <div class="page-header">
+    <h3>Projects</h3>
+    <ul>
+      <li><a href="projects.html">Class Projects</a></li>
+      <li><a href="build_on_me.html">Build-on-Me Projects</a></li>
+      <li><a href="individual_projects.html">Individual Projects</a></li>
+    </ul>
+  </div>
 	<div class="page-header">
+    <h3>Resources</h3>
+      <ul>
+        <li><a href="day2.pdf">Day 2 Handout</a></li>
+        <li><a href="cheatsheet-python-grok.pdf">CheatSheet Handout</a></li>
+      </ul>
+  </div>
+
+  <div class="page-header">
 		<h3 id="selfguided">Self-Guided Resources</h3>
 	</div>
 	<p>Lots of resources exist to learn how to program, but here are the best free ones money can't buy!</p>
@@ -116,22 +179,6 @@
 			</div><!-- /.col-sm-4 -->
 		</div> <!-- / row -->
 
-	<div class="page-header">
-		<h3><a href="projects.html">Class Projects</a></h3>
-  </div>
-	<div class="page-header">
-    <h3><a href="build_on_me.html">Build-on-Me Projects</a></h3>
-	</div>
-	<div class="page-header">
-    <h3><a href="individual_projects.html">Individual Projects</a></h3>
-  </div>
-	<div class="page-header">
-    <h3>Resources</h3>
-      <ul>
-        <li><a href="day2.pdf">Day 2 Handout</a></li>
-        <li><a href="cheatsheet-python-grok.pdf">CheatSheet Handout</a></li>
-      </ul>
-  </div>
 </div>
 </body>
 </html>
